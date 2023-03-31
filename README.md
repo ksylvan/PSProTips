@@ -29,6 +29,7 @@ my PowerShell profile script.
 The directory structure in the directory where your profile script
 is located will look like the following:
 
+```text
 .── Microsoft.PowerShell_profile.ps1
 ├── completions
     ├── Aliases.ps1
@@ -40,6 +41,7 @@ is located will look like the following:
     ├── kubernetes.ps1
     ├── nerdctl.ps1
     └── rustup.ps1
+```
 
 The code in the `PowerShell_profile.ps1` file looks for the files
 in the `completions` directory, and if they have the extension `.ps1` they
