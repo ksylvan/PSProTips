@@ -15,7 +15,7 @@ $env:PATH += ";$HOME\.bin;$HOME\.cargo\bin"
 
 $enableBashCompletions = ($Null -ne (Get-Command bash -ErrorAction Ignore)) -or ($Null -ne (Get-Command git -ErrorAction Ignore))
 if ($enableBashCompletions) {
-  Import-Module PSBashCompletions -Scope Global
+  Import-Module -Name PSBashCompletions -Scope Global
 
   # Register-BashArgumentCompleter git "$completions_path\git-completions.bash"
   $files = Get-ChildItem -Path $completions_path -Filter "*.bash" -File
